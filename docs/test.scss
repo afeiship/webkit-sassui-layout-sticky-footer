@@ -11,10 +11,13 @@ body {
   margin: 0 auto;
 }
 
+.use-abs {
+  @include webkit-sassui-layout-sticky-footer(100px, 0px);
+}
+
 .test-webkit-sassui-layout-sticky-footer {
   border: 1px solid red;
 
-  @include webkit-sassui-layout-sticky-footer(100px, 0px);
   width: 48%;
 
   &:first-child {
