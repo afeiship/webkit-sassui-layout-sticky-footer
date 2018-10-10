@@ -25,6 +25,14 @@ body {
   margin: 0 auto;
 }
 
+.use-abs {
+  padding-bottom: 100px;
+}
+
+.use-abs > .footer {
+  height: 100px;
+}
+
 .test-webkit-sassui-layout-sticky-footer {
   border: 1px solid red;
   width: 48%;
