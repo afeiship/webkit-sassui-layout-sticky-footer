@@ -1,0 +1,57 @@
+/*webkit-sassui-layout-sticky-footer Start*/
+.webkit-sassui-layout-sticky-footer, .test-webkit-sassui-layout-sticky-footer {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.webkit-sassui-layout-sticky-footer > .footer, .test-webkit-sassui-layout-sticky-footer > .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/*webkit-sassui-layout-sticky-footer End*/
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 560px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.test-webkit-sassui-layout-sticky-footer {
+  border: 1px solid red;
+  padding-bottom: 100px;
+  width: 48%;
+}
+
+.test-webkit-sassui-layout-sticky-footer > .footer {
+  height: 100px;
+}
+
+.test-webkit-sassui-layout-sticky-footer:first-child {
+  float: left;
+  background: #eee;
+}
+
+.test-webkit-sassui-layout-sticky-footer:last-child {
+  float: right;
+  background: #060;
+}
+
+.test-webkit-sassui-layout-sticky-footer > .bd {
+  font-size: 14px;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+.test-webkit-sassui-layout-sticky-footer > .footer {
+  background: #f60;
+}

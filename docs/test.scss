@@ -1,0 +1,40 @@
+@import "../dist/webkit-sassui-layout-sticky-footer.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 560px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.test-webkit-sassui-layout-sticky-footer {
+  border: 1px solid red;
+
+  @include webkit-sassui-layout-sticky-footer(100px, 0px);
+  width: 48%;
+
+  &:first-child {
+    float: left;
+    background: #eee;
+  }
+
+  &:last-child {
+    float: right;
+    background: #060;
+  }
+
+  > .bd {
+    font-size: 14px;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+  }
+
+  > .footer {
+    background: #f60;
+  }
+}

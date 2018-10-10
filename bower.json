@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-layout-sticky-footer",
+  "description": "Sticky footer use absolute solution",
+  "main": [
+    "dist/webkit-sassui-layout-sticky-footer.css",
+    "dist/webkit-sassui-layout-sticky-footer.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "layout-sticky-footer"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sassui-layout-sticky-footer",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

@@ -1,0 +1,26 @@
+/*webkit-sassui-layout-sticky-footer Start*/
+$webkit-sassui-layout-sticky-footer-options: () !default;
+
+.webkit-sassui-layout-sticky-footer {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+
+  > .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+@mixin webkit-sassui-layout-sticky-footer($inHeight: 50px, $inGap: 10px) {
+  @extend .webkit-sassui-layout-sticky-footer;
+  padding-bottom: $inHeight + $inGap;
+
+  > .footer {
+    height: $inHeight;
+  }
+}
+/*webkit-sassui-layout-sticky-footer End*/
