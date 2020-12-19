@@ -1,0 +1,33 @@
+/*!
+ * name: @jswork/wsui-layout-sticky-footer
+ * description: Sticky footer use absolute solution.
+ * homepage: https://github.com/afeiship/wsui-layout-sticky-footer
+ * version: 1.0.0
+ * date: 2020-12-19 12:06:40
+ * license: MIT
+ */
+
+/*wsui-layout-sticky-footer Start*/
+.wsui-layout-sticky-footer {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+
+  > .is-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+@mixin wsui-layout-sticky-footer($in-height: 50px, $in-gap: 10px) {
+  @extend .wsui-layout-sticky-footer;
+  padding-bottom: $in-height + $in-gap;
+
+  > .is-footer {
+    height: $in-height;
+  }
+}
+/*wsui-layout-sticky-footer End*/

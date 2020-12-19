@@ -1,10 +1,13 @@
-@import "../dist/webkit-sassui-layout-sticky-footer.scss";
+@import "../dist/index.scss";
 
 html,
 body {
   height: 100%;
 }
-
+* {
+  padding: 0;
+  margin: 0;
+}
 .container {
   width: 560px;
   height: 100%;
@@ -12,11 +15,11 @@ body {
 }
 
 .use-abs {
-  @include webkit-sassui-layout-sticky-footer(100px, 0px);
+  @include wsui-layout-sticky-footer(100px, 0px);
 }
 
-.test-webkit-sassui-layout-sticky-footer {
-  border: 1px solid red;
+.test-wsui-layout-sticky-footer {
+  border: 1px solid green;
 
   width: 48%;
 

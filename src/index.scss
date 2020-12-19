@@ -1,0 +1,24 @@
+/*wsui-layout-sticky-footer Start*/
+.wsui-layout-sticky-footer {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+
+  > .is-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+@mixin wsui-layout-sticky-footer($in-height: 50px, $in-gap: 10px) {
+  @extend .wsui-layout-sticky-footer;
+  padding-bottom: $in-height + $in-gap;
+
+  > .is-footer {
+    height: $in-height;
+  }
+}
+/*wsui-layout-sticky-footer End*/
