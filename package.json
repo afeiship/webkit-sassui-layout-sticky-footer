@@ -1,6 +1,6 @@
 {
   "name": "@jswork/wsui-layout-sticky-footer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sticky footer use absolute solution.",
   "homepage": "https://github.com/afeiship/wsui-layout-sticky-footer",
   "author": {
@@ -30,5 +30,12 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "keywords": [
+    "webkit",
+    "sass",
+    "layout",
+    "sticky",
+    "footer"
+  ]
 }
